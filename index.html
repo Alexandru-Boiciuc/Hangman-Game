@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+        #wordDisplay {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        #lives {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        #message {
+            font-size: 24px;
+            color: red;
+            margin-top: 20px;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-confetti@2.9.3/tsparticles.confetti.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container text-center">
+        <h1>Hangman Game</h1>
+        <div id="wordDisplay" class="my-4"></div>
+        <div id="lives" class="my-4"></div>
+        <input type="text" id="guessInput" maxlength="1" class="form-control w-25 mx-auto" placeholder="Enter a letter">
+        <button id="guessButton" class="btn btn-primary mt-3">Guess</button>
+        <div id="message" class="mt-4"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
